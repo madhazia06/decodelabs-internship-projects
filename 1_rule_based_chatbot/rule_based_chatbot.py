@@ -1,4 +1,9 @@
+# Project 1: Rule-Based Chatbot
+# Description: A simple chatbot that responds to predefined user inputs
+# using a dictionary and conditional statements.
 
+
+# Store predefined user inputs (keys) and chatbot responses (values).
 responses = {
   "hello": "Hello! How can I assist you today?",
   "what is your name": "I'm ChatBot, your assistant.",
@@ -21,12 +26,26 @@ responses = {
   "what is your purpose": "My purpose is to demonstrate rule-based AI.",
   "help": "You can ask about me, programming, or AI."
 }
+
+# Display instructions when the chatbot starts.
 print("Enter prompt or 'exit' to end chat.")
+
+# Keep the chatbot running until the user enters the exit command.
 while True:
+
+  # Accept user input, convert it to lowercase, and remove
+  # leading and trailing whitespace for consistent matching.
   user_input = input("You: ").lower().strip()
+
+  # Check whether the user wants to end the conversation.
   if user_input == "exit":
     print("Chat completed!")
-    break
+    break # Terminate the loop and end the program.
+    
   else:
+    # Search for the user's input in the responses dictionary.
+    # Return a default message if no matching key is found.
     reply = responses.get(user_input, "Sorry! I don't understand.")
+
+    # Display the chatbot's response.
     print("ChatBot:", reply)

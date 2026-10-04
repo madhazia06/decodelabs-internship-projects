@@ -101,8 +101,9 @@ Project 2/
 └── README.md
 ```
 
-## Internship Information
+## Project Information
 
-**Internship:** Artificial Intelligence  
-**Organization:** DecodeLabs  
-**Project:** Project 2 - Data Classification Using AI
+- Internship: Artificial Intelligence
+- Organization: DecodeLabs
+- Project: 2 — Data Classification Using AI
+- Language: Python
